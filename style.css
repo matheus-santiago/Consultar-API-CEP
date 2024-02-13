@@ -1,11 +1,56 @@
-@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&family=Sixtyfour&display=swap');/*Protest Strike e Sixtyfour*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 
 *{
     text-align: center;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 #titulo{
     font-family: 'Sixtyfour', sans-serif;
-    color: rgb(0, 0, 0);
+    color: #328BA8
 }
 
+body{
+    margin: 10px;
+    width: 100vw;
+    height: 100vh;
+    background-color: #051171;
+}
+
+#resultado{
+    margin-top: 10px;
+    margin-left: 30%;
+    margin-right: 30%;
+    align-items: center;
+    background-color: #328BA8;
+    border-radius: 5px;
+    
+    color: white;
+}
+
+#descricao{
+    color: #44BBE3;
+}
+
+#btn{
+    background-color: #00526d;
+    border-radius: 15px;
+    padding: 4px;
+    color: #a3e8ff;
+    transition: opacity 0.5s ease-in-out; /* Transição para a propriedade de opacidade */
+}
+
+#btn:hover {
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.7); /* Adiciona um brilho ao redor do botão */
+}  
+
+#cepInput{
+    background-color: #aeebff;
+    border-radius: 8px;
+    outline: none;
+}
+
+#cepInput:hover {
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.7); /* Adiciona um brilho ao redor do botão */
+}  
