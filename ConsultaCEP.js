@@ -5,7 +5,7 @@ async function consultarCEP(){
     // Validação do formato do CEP (apenas dígitos, 8 caracteres)
     if (!/^\d{8}$/.test(cep)) {
         const resultadoDiv = document.getElementById('resultado');
-        resultadoDiv.innerHTML = '<p>CEP inválido. Deve conter apenas dígitos e ter 8 números.</p>';
+        resultadoDiv.innerHTML = '<p><strong>CEP inválido.</strong> Deve conter apenas dígitos e ter 8 números.</p>';
         return;
     }
 
@@ -26,11 +26,11 @@ async function consultarCEP(){
             //Exibe as informações na tela
             const resultadoDiv = document.getElementById('resultado');
             resultadoDiv.innerHTML = `
-                <p>CEP consultado: ${data.cep}</p>
-                <p>Estado: ${data.state}</p>
-                <p>Cidade: ${data.city}</p>
-                <p>Bairro: ${data.neighborhood}</p>
-                <p>Rua: ${data.street}</p>
+                <p><strong>CEP consultado:</strong> ${data.cep}</p>
+                <p><strong>Estado:</strong> ${data.state}</p>
+                <p><strong>Cidade:</strong> ${data.city}</p>
+                <p><strong>Bairro:</strong> ${data.neighborhood}</p>
+                <p><strong>Rua:</strong> ${data.street}</p>
             `;
 
        // Exibe mensagens de erro na página

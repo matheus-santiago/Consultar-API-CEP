@@ -1,56 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 
 *{
-    text-align: center;
     margin: 0;
     font-family: 'Poppins', sans-serif;
 }
 
-#titulo{
-    font-family: 'Sixtyfour', sans-serif;
-    color: #328BA8
+body{
+    background-image: url(city.jpg);    
 }
 
-body{
-    margin: 10px;
-    width: 100vw;
-    height: 100vh;
-    background-color: #051171;
+.principal{
+    background-color: #071637;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding: 70px;
+    text-align: center;
+    border-radius: 15px;
 }
 
 #resultado{
-    margin-top: 10px;
-    margin-left: 30%;
-    margin-right: 30%;
-    align-items: center;
-    background-color: #328BA8;
-    border-radius: 5px;
-    
-    color: white;
+    margin-top: 15px;
+    color: #6b93ea;
 }
 
-#descricao{
-    color: #44BBE3;
+#cepInput{
+    padding: 5px;
+    outline: none;
+    transition: box-shadow 0.3s ease; /* Adiciona uma transição suave */
+    border: none;
+    border-radius: 5px;
+}
+input:hover{
+    box-shadow: 0 0 10px #6b93ea;
 }
 
 #btn{
-    background-color: #00526d;
-    border-radius: 15px;
-    padding: 4px;
-    color: #a3e8ff;
-    transition: opacity 0.5s ease-in-out; /* Transição para a propriedade de opacidade */
+    padding: 5px;
+    background-color: #0735EB;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    transition: box-shadow 0.3s ease;
 }
 
-#btn:hover {
-    box-shadow: 0 0 10px rgba(0, 255, 0, 0.7); /* Adiciona um brilho ao redor do botão */
-}  
-
-#cepInput{
-    background-color: #aeebff;
-    border-radius: 8px;
-    outline: none;
+button:hover{
+    box-shadow: 0 0 10px #6b93ea;
 }
-
-#cepInput:hover {
-    box-shadow: 0 0 10px rgba(0, 255, 0, 0.7); /* Adiciona um brilho ao redor do botão */
-}  
